@@ -15,12 +15,29 @@ Notice:
 
 **Citation**
 ```
-@misc{li2023codeie,
-      title={CodeIE: Large Code Generation Models are Better Few-Shot Information Extractors}, 
-      author={Peng Li and Tianxiang Sun and Qiong Tang and Hang Yan and Yuanbin Wu and Xuanjing Huang and Xipeng Qiu},
-      year={2023},
-      eprint={2305.05711},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{DBLP:conf/acl/LiSTYWHQ23,
+  author       = {Peng Li and
+                  Tianxiang Sun and
+                  Qiong Tang and
+                  Hang Yan and
+                  Yuanbin Wu and
+                  Xuanjing Huang and
+                  Xipeng Qiu},
+  editor       = {Anna Rogers and
+                  Jordan L. Boyd{-}Graber and
+                  Naoaki Okazaki},
+  title        = {CodeIE: Large Code Generation Models are Better Few-Shot Information
+                  Extractors},
+  booktitle    = {Proceedings of the 61st Annual Meeting of the Association for Computational
+                  Linguistics (Volume 1: Long Papers), {ACL} 2023, Toronto, Canada,
+                  July 9-14, 2023},
+  pages        = {15339--15353},
+  publisher    = {Association for Computational Linguistics},
+  year         = {2023},
+  url          = {https://doi.org/10.18653/v1/2023.acl-long.855},
+  doi          = {10.18653/v1/2023.acl-long.855},
+  timestamp    = {Thu, 10 Aug 2023 12:35:53 +0200},
+  biburl       = {https://dblp.org/rec/conf/acl/LiSTYWHQ23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
