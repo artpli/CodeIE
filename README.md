@@ -2,6 +2,9 @@
 [ACL23] CodeIE: Large Code Generation Models are Better Few-Shot Information Extractors     
 [https://arxiv.org/abs/2305.05711](https://arxiv.org/abs/2305.05711)
 
+
+Update 24-01-03: I will update this codebase during the Chinese New Year holiday.
+
 Our code is mainly modified from the [UIE](https://github.com/universal-ie/UIE) and [CoCoGen](https://github.com/reasoning-machines/CoCoGen) code repositories. 
 We have updated an initial version of the source file. More information about data processing and code will be provided in subsequent updates.
 
