@@ -45,6 +45,11 @@ CodeIE/
 │ ├── make_task_files_shot.sh
 │ └── query_api_shot.sh
 ├── src/
+│ ├── api/ # query openai's api
+│ ├── converters/ # nl/code style transforming
+│ ├── eval/ # evaluation
+│ ├── prompt/ # make prompts
+│ └── utils/
 └── uie/ # modified from UIE
 ```
 
