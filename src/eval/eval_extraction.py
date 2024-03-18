@@ -34,6 +34,7 @@ def main():
     options = parser.parse_args()
 
     data_dict = {
+        # 'eval': ['eval_preds_record.txt', 'val.json'],
         'test': [options.pred_file, options.gold_file],
     }
 
@@ -108,6 +109,31 @@ def main():
                 pred_instance_list = scorer.load_pred_list(pred_list)
                 assert len(pred_instance_list) == len(gold_instance_list)
 
+                # complex_samples = [json.loads(line)['statistic']['complex'] for line in read_file(pred_filename)]
+                # complex_numbers = sum(complex_samples)
+                #
+                # print ("*" * 20)
+                # print ("complex numbers: ", complex_numbers)
+                # print ("*" * 20)
+                #
+                # gold_instance_list_new = []
+                # pred_instance_list_new = []
+                # for i in range(len(pred_instance_list)):
+                #     if complex_samples[i] == True:
+                #         gold_instance_list_new.append(gold_instance_list[i])
+                #         pred_instance_list_new.append(pred_instance_list[i])
+                # gold_instance_list = gold_instance_list_new
+                # pred_instance_list = pred_instance_list_new
+
+                # gold_instance_list_new = []
+                # pred_instance_list_new = []
+                # for i in range(len(pred_instance_list)):
+                #     if ill_formed[i] == False:
+                #         gold_instance_list_new.append(gold_instance_list[i])
+                #         pred_instance_list_new.append(pred_instance_list[i])
+                # gold_instance_list = gold_instance_list_new
+                # pred_instance_list = pred_instance_list_new
+
                 sub_results = scorer.eval_instance_list(
                     gold_instance_list=gold_instance_list,
                     pred_instance_list=pred_instance_list,
@@ -116,6 +142,7 @@ def main():
                 )
                 results.update(sub_results)
 
+            # pprint(results)
             result_list[data_key] += [results]
 
             if options.write_to_file:
@@ -126,6 +153,14 @@ def main():
                     prefix=data_key,
                 )
 
+    # print("===========> AVG <===========")
+    #
+    # for data_key in data_dict:
+    #     if len(result_list[data_key]) < 1:
+    #         continue
+    #     for key in result_list[data_key][0]:
+    #         ave = np.mean([result[key] for result in result_list[data_key]])
+    #         print(data_key, key, ave)
 
 
 if __name__ == "__main__":

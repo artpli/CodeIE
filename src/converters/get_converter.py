@@ -1,10 +1,10 @@
 # NER tasks
-from src.converters.ner.structure2pl_func_v5 import PLFuncPromptCreator as NERPLFuncPromptCreator
-from src.converters.ner.structure2nl_sel_v2 import NLSELPromptCreator as NERNLSELPromptCreator
+from src.converters.ner.structure2pl_func import PLFuncPromptCreator as NERPLFuncPromptCreator
+from src.converters.ner.structure2nl_sel import NLSELPromptCreator as NERNLSELPromptCreator
 
 # RE tasks
-from src.converters.re.structure2pl_func_v5 import PLFuncPromptCreator as REPLFuncPromptCreator
-from src.converters.re.structure2nl_sel_v2 import NLSELPromptCreator as RENLSELPromptCreator
+from src.converters.re.structure2pl_func import PLFuncPromptCreator as REPLFuncPromptCreator
+from src.converters.re.structure2nl_sel import NLSELPromptCreator as RENLSELPromptCreator
 
 
 class ConverterFactory:
