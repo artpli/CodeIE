@@ -80,7 +80,7 @@ Please note that the version of the `openai` library used by CoCoGen is `0.11.0`
 ### Datasets and Preprocessing
 Please refer to the `Datasets of Extraction Tasks` section of UIE's repository to get and preprocess the NER and RE datasets.
 
-When sampling few-shot samples, we viewed `null output` as one special class and sampled corresponding few-shot examples. We provided our new `sample_data_shot.py` file.
+When sampling few-shot samples, we viewed `null output` as one special class and sampled corresponding few-shot examples. We provided our new `sample_data_shot.py` file in the `data` folder.
 
 Then you can get the `data` folder.
 
