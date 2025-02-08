@@ -14,7 +14,7 @@ Finally we evaluated the model outputs based on UIE's evaluation process.
 We sincerely thank these two works and previous works.
 
 ## Notice
-1. A piece of not-so-good news is that the `Codex` models are now [deprecated by OpenAI](https://platform.openai.com/docs/guides/code), which will have a significant impact on replicating this paper. Some possible solutions include applying for OpenAI's [Researcher Access Program](https://openai.com/form/researcher-access-program) or accessing Codex on [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/work-with-code).
+1. A piece of not-so-good news is that the `Codex` models are now [deprecated by OpenAI](https://platform.openai.com/docs/guides/code). Some possible solutions include applying for OpenAI's [Researcher Access Program](https://openai.com/form/researcher-access-program) or accessing Codex on [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/work-with-code).
 2. Since we are using the closed-source APIs of OpenAI, we are unaware of the technical details behind them, such as the specific pre-training corpora used. Therefore, there might be potential issues of [data contamination](https://hitz-zentroa.github.io/lm-contamination/blog/) in the evaluation of our paper. (Acknowledgement: [Oscar Sainz](https://osainz59.github.io/))
 
 ## Workflow
