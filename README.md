@@ -1,3 +1,5 @@
+
+
 # CodeIE
 
 This is the official repository for "[CodeIE: Large Code Generation Models are Better Few-Shot Information Extractors](https://arxiv.org/abs/2305.05711)" (ACL 2023).    
@@ -19,6 +21,7 @@ Please refer to the [workflow.md](./workflow.md) file.
 ## Notice
 1. A piece of not-so-good news is that the `Codex` models are now [deprecated by OpenAI](https://platform.openai.com/docs/guides/code). Some possible solutions include applying for OpenAI's [Researcher Access Program](https://openai.com/form/researcher-access-program) or accessing Codex on [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/work-with-code).
 2. Since we are using the closed-source APIs of OpenAI, we are unaware of the technical details behind them, such as the specific pre-training corpora used. Therefore, there might be potential issues of [data contamination](https://hitz-zentroa.github.io/lm-contamination/blog/) in the evaluation of our paper. (Acknowledgement: [Oscar Sainz](https://osainz59.github.io/))
+3. This codebase relies on the legacy `openai` Python package (v0.x, specifically `0.11.0` as referenced in the workflow). Please ensure you install the correct version (`pip install openai==0.11.0`) to avoid API compatibility issues with newer v1.x releases.
 
 
 ## Citation
